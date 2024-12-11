@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333; /* Added background color for better visibility */
+}
+
+#main{
+    width: 100%;
+    margin-top: 50px;
+    height: auto;
+    display: block;
+    border: 2px solid black;
+    box-sizing: border-box; /* Ensures padding and borders don't affect width */
+}
+
+.main-up{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.main-up img{
+    width: 100%;
+    height: auto;
+    max-height: 250px; /* Limits image size */
+    object-fit: cover; /* Ensures image doesn't distort */
+}
+
+.main-down{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.main-down input{
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid black;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.main-down button{
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    margin-top: 20px;
+    cursor: pointer; /* Added cursor pointer for better UX */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #main {
+        margin-top: 20px;
+        height: auto;
+    }
+
+    .main-up img {
+        max-height: 200px;
+    }
+
+    .main-down input, .main-down button {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    #main {
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .main-up img {
+        max-height: 150px;
+    }
+
+    .main-down input, .main-down button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
